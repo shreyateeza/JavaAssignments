@@ -1,0 +1,54 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.3.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+	
+	<bean id="point" class="demo.Point">
+		<property name="x" value="0" />
+		<property name="y" value="1" />
+	</bean>
+	
+	<bean id="line" class="demo.Line">
+		<property name="p1" ref="point_id_1" />
+		<property name="p2" ref="point_id_2" />
+	</bean>
+	
+	<bean id="triangle" class="demo.Triangle">
+		<property name="p3" ref="point_id_3" />
+		<property name="p4" ref="point_id_4" />
+		<property name="p5" ref="point_id_5" />
+	</bean>
+	
+	
+	<bean id="point_id_1" class="demo.Point">
+		<property name="x" value="1" />
+		<property name="y" value="2" />
+	</bean>
+	
+	<bean id="point_id_2" class="demo.Point">
+		<property name="x" value="2" />
+		<property name="y" value="3" />
+	</bean>
+	
+	<bean id="point_id_3" class="demo.Point">
+		<property name="x" value="3" />
+		<property name="y" value="4" />
+	</bean>
+	
+	<bean id="point_id_4" class="demo.Point">
+		<property name="x" value="4" />
+		<property name="y" value="5" />
+	</bean>
+	
+	<bean id="point_id_5" class="demo.Point">
+		<property name="x" value="5" />
+		<property name="y" value="6" />
+	</bean>
+	
+</beans>
