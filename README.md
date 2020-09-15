@@ -2,7 +2,7 @@
 
 ### This Repository contains Assignments submitted as a part of the Training
 
-### Batch: ** Java Full Stack Development **
+### Batch: *Java Full Stack Development*
 
 #### Topics / Technologies Covered
 
