@@ -1,6 +1,6 @@
 ## Telstra Graduate Program
 
-### This Repository contains Assignments submitted as a part of the Training
+### This Repository contains Aommssignments submitted as a part of the Training
 
 ### Batch: ** Java Full Stack Development **
 
