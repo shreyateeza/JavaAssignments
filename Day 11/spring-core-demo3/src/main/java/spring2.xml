@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+	<bean id="employee"
+		class="com.manipal.spring_core_demo3.model.Employee" autowire="byName">
+		<property name="empId" value="10001" />
+		<property name="empName" value="Ram" />
+		<property name="salary" value="89000" />
+		
+	</bean>
+
+<!--  address bean can be reused -->
+
+<!-- expected single matching bean but found 2: address1,address2 in case of autowire="byType" -->
+	<bean id="address" class="com.manipal.spring_core_demo3.model.Address">
+				<property name="streetNo" value="123" />
+				<property name="city" value="Bengaluru" />
+				<property name="pin" value="560001" />
+			</bean>
+
+	<bean id="address2" class="com.manipal.spring_core_demo3.model.Address">
+				<property name="streetNo" value="123" />
+				<property name="city" value="Bengaluru" />
+				<property name="pin" value="560001" />
+			</bean>
+
+
+
+
+</beans>
+
