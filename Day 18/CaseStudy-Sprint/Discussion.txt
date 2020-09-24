@@ -1,0 +1,10 @@
+1. User Registration:
+2. User Login 
+3. User Profile Management
+4. Admin Login
+5. Office details administration
+6. Bookings Dashboard
+7. Bookings Approval
+8. Seat Search
+9. Seat Booking
+10. Seat Swap Request

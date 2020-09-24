@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        const first = [10,20,30];
+        const second = [111,222,333];
+        const third = first.concat(second);
+        console.log(third);
+
+        // Use spread operator
+
+        const fourth = [...first, ...second];
+        console.log(fourth);
+
+        const fifth = ['Ram', ...first, 99, 77, ...second, true];
+        console.log(fifth);
+        console.log(...first);
+        </script>
+    </body>
+
+
+</html>

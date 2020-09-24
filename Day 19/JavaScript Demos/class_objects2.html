@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        class Person {
+            greet(){
+                alert('Welcome Person');
+            }
+        }    
+
+        class Employee extends Person {
+            constructor(){
+                super();
+                alert('constructor....')
+            }
+
+            greetEmployee(){
+                alert('Welcome ');    
+            }
+        }    
+
+        let emp = new Employee();
+        emp.greetEmployee(); 
+        emp.greet();           
+
+        </script>
+    </body>
+
+
+</html>
